@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.26/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.26/esri/css/esri.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.arcgis.com/3.26/"></script>
+    <script src="main.js"></script>
+    <title>deinteko</title>
+</head>
+
+<body class="claro">
+    <div id="mainWindow" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline',gutters:false"
+        style="width:100%; height:100%;">
+        <div id="map" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+        </div>
+        <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props="region:'leading'" style="width: 30%;">
+            <div data-dojo-type="dijit/layout/ContentPane" title="Layer list">
+                <div id="layerList"></div>
+            </div>
+            <div data-dojo-type="dijit/layout/ContentPane" title="Legend">
+                <div id="legend"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
